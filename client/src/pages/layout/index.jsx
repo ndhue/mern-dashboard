@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 
 import { themeSettings } from "@/theme";
 import { Navbar } from '@/components/Navbar';
-import { SideBar } from '@/components/SideBar';
+import { Sidebar } from '@/components/Sidebar';
 
 import { useGetUserQuery } from '@/controllers/api';
 
@@ -23,7 +23,7 @@ export const Layout = () => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Box display={isNonMobile ? "flex" : "block"} width="100%" height="100%">
-        <SideBar 
+        <Sidebar 
           user={data || {}}
           isNonMobile={isNonMobile}
           drawerWidth="250px"

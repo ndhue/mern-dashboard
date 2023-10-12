@@ -92,7 +92,7 @@ const navItems = [
   },
 ];
 
-export const SideBar = ({
+export const Sidebar = ({
   user,
   drawerWidth,
   isSidebarOpen,
