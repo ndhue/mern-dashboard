@@ -150,9 +150,10 @@ export const Products = () => {
         </Box>
       ) : (
         <Box
-          position="absolute"
-          top="50%"
-          left="55%"
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        minHeight="50vh"
         >
           <CircularProgress color="inherit" />
       </Box>

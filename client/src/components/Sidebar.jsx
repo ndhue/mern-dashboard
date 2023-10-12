@@ -92,7 +92,7 @@ const navItems = [
   },
 ];
 
-export const Sidebar = ({
+export const SideBar = ({
   user,
   drawerWidth,
   isSidebarOpen,
@@ -110,18 +110,18 @@ export const Sidebar = ({
 
   return (
     <Box component="nav">
-      {isSidebarOpen && (
           <Drawer
             open={isSidebarOpen}
             onClose={() => setIsSidebarOpen(false)}
             variant="persistent"
             anchor="left"
             sx={{
-              width: drawerWidth,
+              width: isSidebarOpen ? drawerWidth : 0,
+              transition: "width 0.3s ease",
               "& .MuiDrawer-paper": {
                 color: theme.palette.secondary[200],
                 backgroundColor: theme.palette.background.alt,
-                boxSixing: "border-box",
+                boxSizing: "border-box",
                 borderWidth: isNonMobile ? 0 : "2px",
                 width: drawerWidth,
               },
@@ -235,7 +235,6 @@ export const Sidebar = ({
               </FlexBetween>
             </Box>
           </Drawer>
-      )}
     </Box>
   );
 };

@@ -39,9 +39,6 @@ export const Transactions = () => {
   const theme = useTheme();
   const { data, isLoading } = useGetTransactionsQuery();
   
-  const [rowId, setRowId] = useState(0);
-  console.log("🚀 ~ file: index.jsx:43 ~ Transactions ~ rowId:", rowId)
-  
   return (
    <Box m="1.5rem 2.5rem">
     <Header title="CUSTOMERS" subtitle="List of Customers" />
@@ -86,8 +83,7 @@ export const Transactions = () => {
         rows={data || []}
         columns={columns}
         slots={{ 
-          toolbar: GridToolbar,
-          loadingOverlay: LinearProgress,
+          toolbar: GridToolbar
         }}
         slotProps={{
           toolbar: {
