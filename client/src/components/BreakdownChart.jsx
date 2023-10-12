@@ -83,15 +83,9 @@ export const BreakdownChart = ({ isDashboard = false }) => {
           from: "color",
           modifiers: [["darker", 0.2]],
         }}
-        enableArcLinkLabels={!isDashboard}
         arcLinkLabelsTextColor={theme.palette.secondary[200]}
         arcLinkLabelsThickness={2}
         arcLinkLabelsColor={{ from: "color" }}
-        arcLabelsSkipAngle={10}
-        arcLabelsTextColor={{
-          from: "color",
-          modifiers: [["darker", 2]],
-        }}
         legends={[
           {
             anchor: "bottom",

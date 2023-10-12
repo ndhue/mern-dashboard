@@ -5,7 +5,7 @@ import { BreakdownChart } from '@/components/BreakdownChart';
 
 export const Breakdown = () => {
   return (
-    <Box m="1.5rem 2.5rem">
+    <Box m="1.5rem">
       <Header title="BREAKDOWN" subtitle="Breakdown of Sales By Category" />
       <Box mt="20px" height="75vh">
         <BreakdownChart />

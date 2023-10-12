@@ -22,7 +22,7 @@ export const Layout = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Box display={isNonMobile ? "flex" : "block"} width="100%" height="100%">
+      <Box display={isNonMobile ? "flex" : "block"} width="99%" height="100%">
         <Sidebar 
           user={data || {}}
           isNonMobile={isNonMobile}
